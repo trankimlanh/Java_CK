@@ -1,0 +1,8 @@
+FlowLayout : xắp xếp từ trái sang (theo hàng ngang)
+new JPanel(new FlowLayout(FlowLayout.LEFT, 10, 5));
+BoxLayout : xắp xếp theo trục x or y
+mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
+BorderLayout : xx theo NORTH (Bắc), SOUTH (Nam), WEST (Tây), EAST (Đông), và CENTER (Trung tâm)
+mainPanel.setLayout(new BorderLayout());
+GridLayout : xắp xếp theo dạng lưới, với số hàng và cột cố định.
+mainPanel.setLayout(new GridLayout(2, 3)); // 2 hàng, 3 cột
