@@ -24,3 +24,4 @@ CREATE TABLE AN (
 cách xuất file .sql thì coi hình gửi bên dưới
 
 = link đăng nhập vào database của bản thân thì sửa lại ở phần ConnectDB nhá => chạy được bài trong sql mới đúng nhá 
+Viết bằng vscode: nếu dùng elcipse thì coi lại phần jar để liên kết với sql còn nếu như vscode thì không cần
