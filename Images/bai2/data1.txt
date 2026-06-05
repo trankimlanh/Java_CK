@@ -1,0 +1,4 @@
+DongVat1,Bo
+DongVat2,Bo
+DongVat3,Meo
+DongVat4,Tho

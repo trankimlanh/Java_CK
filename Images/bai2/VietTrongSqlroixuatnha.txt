@@ -1,0 +1,26 @@
+CREATE DATABASE Test888;
+USE Test888;
+=
+CREATE TABLE DONGVAT (
+    TenDongVat VARCHAR(10) PRIMARY KEY,
+    Loai VARCHAR(10) CHECK (Loai IN ('Bo', 'Meo', 'Tho'))
+);
+
+CREATE TABLE THUCAN (
+    TenThucAn VARCHAR(10) PRIMARY KEY,
+    Loai VARCHAR(20) CHECK (Loai IN ('Co', 'Thit', 'Carot'))
+);
+
+
+CREATE TABLE AN (
+    TenDongVat VARCHAR(10),
+    TenThucAn VARCHAR(10),
+    CoTheAnDuoc VARCHAR(10),
+    PRIMARY KEY (TenDongVat, TenThucAn),
+    FOREIGN KEY (TenDongVat) REFERENCES DONGVAT(TenDongVat),
+    FOREIGN KEY (TenThucAn) REFERENCES THUCAN(TenThucAn)
+);
+
+cách xuất file .sql thì coi hình gửi bên dưới
+
+= link đăng nhập vào database của bản thân thì sửa lại ở phần ConnectDB nhá => chạy được bài trong sql mới đúng nhá 
